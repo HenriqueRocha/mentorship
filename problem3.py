@@ -1,11 +1,11 @@
 def compareTripletsScore(a, b):
-    alice = 0
-    bob = 0
+    score_alice = 0
+    score_bob = 0
 
     for i in range(3):
         if a[i] > b[i]:
-            alice += 1
+            score_alice += 1
         elif a[i] < b[i]:
-            bob += 1
+            score_bob += 1
 
-    return [alice, bob]
+    return [score_alice, score_bob]
